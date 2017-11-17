@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+<body>
+
+        <div class= "container" style="margin-top:20px">
+                <a href="/logout"><button class="container btn btn-danger"  >Logout</button></a>
+            </div>
+    <div class= "container" style="margin-top:20px">
+        <a href="/addevent"><button class="container btn btn-success"  >Add</button></a>
+    </div>
+        
+        <div class="container" style="margin-top :20px">
+                <div class="jumbotron box">
+                    <ul>
+                        <% for (var i=0; i<events.length; i++){ %>
+                            <li>
+                                <a href="/all/<%=  events[i].id; %>"  >
+                                <div class="events" >
+                                    <hr align="left" style="width: 7%; height : 3px; background-color: green;">
+                                    <h2>
+                                            <%=  events[i].name; %>
+                                        </h2>
+                                        <h6><%= events[i].time; %> , <%= events[i].date; %> , <%= events[i].location; %></h6><br>
+                                        <br>
+                                        <p> <%=  events[i].organiser; %></p>
+                                        <p> <%=  events[i].details; %></p>
+                                    </div>    
+                                    </li>
+                                    <hr>
+                                </a>
+                                
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+</body>
+</html>

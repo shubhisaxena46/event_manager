@@ -1,0 +1,32 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="/app.css">
+        </head>
+        <body>
+                <h1 class="jumbotron">Event Management</h1>
+            <div class= "container">
+            <div class="jumbotron">
+                <form action="/addComment" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="name" name="name">
+                </div>
+                <div class="form-group">
+                        <label for="Details">Comment:</label>
+                        <textarea type="paragraph_text" class="form-control" id="Details" placeholder="Comment" name="comment"></textarea>
+                </div>
+
+                <div class="form-group">
+                        <label for="Id">Event Id:</label>
+                        <textarea type="paragraph_text" class="form-control" id="Details" placeholder="event id" name="event_id"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+              <script src="/jQuery.js"></script>
+              <script src="/bootstrap.min.js"></script>
+              
+        </body>
+    </html>

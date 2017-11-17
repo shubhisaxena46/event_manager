@@ -1,0 +1,39 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="/app.css">
+        </head>
+        <body>
+                <h1 class="jumbotron">Please Login<br></h1>  
+            <div class= "container">
+            <div class="jumbotron">
+                <form action="/login" method="POST">
+                
+                <div class="row">
+                    <div class="col">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+                </div> 
+                <div class="col">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+                </div>
+                <br>
+                <div >
+                <button type="submit" class=" btn btn-success" >Submit</button>
+                
+            </div>
+            </form>
+            <a href="/register"><button class=" btn btn-primary" >New? Register</button></a>
+            
+            </div>
+        </div>
+
+        <!-- <button class=" btn btn-success"  >Register</button></h1> -->
+
+              <script src="/jQuery.js"></script>
+              <script src="/bootstrap.min.js"></script>
+              
+        </body>
+    </html>

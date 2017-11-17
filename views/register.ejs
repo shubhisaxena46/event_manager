@@ -1,0 +1,45 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="/app.css">
+        </head>
+        <body>
+            <h1 class="jumbotron">Event Management</h1>
+            <div class= "container">
+            <div class="jumbotron">
+                <form action="/register" method="POST">
+                
+                <div class="row">
+                    <div class="col">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+                </div> 
+                <div class="col">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+                </div>
+                <div class="row">
+                        <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="name" name="name">
+                            </div>
+                <div class="col">
+                        <label for="type">Organiser/participant:</label>
+                        <select type="text" class="form-control" id="org" name="type">
+                                <option selected>Choose...</option>
+                                <option value="organiser">Organiser</option>
+                                <option value="participant">participant</option>
+                        </select>
+                </div>
+            </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+              <script src="/jQuery.js"></script>
+              <script src="/bootstrap.min.js"></script>
+              
+        </body>
+    </html>
