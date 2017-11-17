@@ -12,7 +12,14 @@
                 <a href="/logout"><button class="container btn btn-danger"  >Logout</button></a>
             </div>
             <div class= "container" style="margin-top:20px">
-                    <a href="/delete"><button class="container btn btn-warning">Delete</button></a>
+                    <form action="/delete" method="POST">
+                        <div class="form-group" style="visibility : hidden">
+                                <label for="Id">Event Id:</label>
+                                <textarea type="text" class="form-control"  id="Id" placeholder="event id" name="event_id"><%=  event.id; %></textarea>
+                        </div>
+                        <button type="submit" class="container btn btn-warning">Delete</button>
+                    </form>    
+
                 </div>
         <div class="container" style="margin-top :20px">
                 
